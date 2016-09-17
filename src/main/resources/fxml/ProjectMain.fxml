@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.TextField?>
+<fx:root xmlns:fx="http://javafx.com/fxml" type="javafx.scene.layout.BorderPane">
+    <center>
+        <Group fx:id="center"/>
+    </center>
+    <bottom>
+        <TabPane tabClosingPolicy="UNAVAILABLE" minHeight="50" prefHeight="200">
+            <Tab fx:id="saveTab" text="Save">
+                <HBox>
+                    <Text text="Save project at: "/>
+                    <TextField fx:id="savePathField" prefColumnCount="30"/>
+                    <Button fx:id="savePathButton" text="..."/>
+                    <Button fx:id="saveButton" text="Save"/>
+                </HBox>
+            </Tab>
+            <Tab fx:id="particleListTab" text="Particles">
+
+            </Tab>
+        </TabPane>
+    </bottom>
+</fx:root>
